@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.js"></script>
+    <script src="angular-ui-router.js"></script>
+    <script src="uimemory.js"></script>
+    <link rel="stylesheet" href="style.css" media="screen">
+    <title>Matching Game</title>
+  </head>
+  <body ng-app="matching">
+    <div class="board-setup">
+        <h1>Test Your Memory!</h1>
+        <h3>How many memory cells would you like?</h3>
+        <a ui-sref="board({board_number: 8})">
+          <button type="button">8 Cells</button>
+        </a>
+        <a ui-sref="board({board_number: 16})">
+          <button type="button">16 Cells</button>
+        </a>
+        <a ui-sref="board({board_number: 32})">
+          <button type="button">32 Cells</button>
+        </a>
+      </div>
+  </body>
+  <ui-view></ui-view>
+</html>
