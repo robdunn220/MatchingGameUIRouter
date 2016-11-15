@@ -18,7 +18,8 @@ var randomNumGen = function() {
     return random;
 };
 
-app.controller('BoardRenderer', function($scope, $stateParams, $timeout) {
+app.controller('BoardRenderer', function($scope, $stateParams, $timeout, $state) {
+
   table_setup = false;
   $scope.cards = [];
   var num = $stateParams.board_number;
